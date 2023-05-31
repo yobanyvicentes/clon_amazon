@@ -12,6 +12,7 @@ body{
 /*---------------Header----------------*/
 header{
     display: flex;
+    padding: 5px 0px;
 }
 
 .section_searcher{
@@ -19,14 +20,8 @@ header{
     margin: 0%;
 }
 
-.img_div{
-    /*height: 50px;*/
-}
-
 .logo{
-    margin: 11px 0px;
     padding-left: 10px;
-    height: 38px;
     vertical-align: middle;
 }
 
@@ -34,6 +29,7 @@ header{
     padding: 0px 15px;
     font-size: 12px;
     text-align: center;
+    min-width: 105px;
 }
 
 .doble_text_line{
@@ -46,12 +42,14 @@ strong{
 
 .div_inline_block{
     display: flex;
+    width: 50%;
 }
 
-.div_menu_all{
+.div_menu_select{
     vertical-align: top;
     display: inline-block;
-    width: 45px;
+    width: 7%;
+    min-width: 40px;
     height: 39px;
     background-color: whitesmoke;
 }
@@ -61,17 +59,10 @@ strong{
     height: 38px;
 }
 
-.div_menu_searcher{
-    vertical-align: top;
-    height: 38px;
-    width: 400px;
-    min-width: 250px;
-    display: inline-block;
-}
-
 .searcher{
     vertical-align: top;
-    width: 400px;
+    width: 85%;
+    min-width: 50px;
     display: inline-block;
     height: 38px;
     padding: 0;
@@ -79,13 +70,10 @@ strong{
     border: 0;
 }
 
-.search_span{
-    height: 38px;
-    vertical-align: top;
-    text-align: end;
-}
 .search_img{
     height: 38px;
+    min-width: 45px;
+    width: 8%;
     vertical-align: top;
     text-align: end;
 }
@@ -102,6 +90,7 @@ strong{
 }
 
 .icon_flag{
+    padding-top: 15px;
     display: inline-block;
     width: 20px;
     height: 15px;
