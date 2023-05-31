@@ -5,12 +5,12 @@ body{
     color: white;
     background-color: whitesmoke;
     font-size: 14px;
+    max-width: 1400px;
+    min-width: 800px;
 }
 
 /*---------------Header----------------*/
 header{
-    max-width: 1100px;
-    margin-inline: auto;
     display: flex;
 }
 
@@ -20,9 +20,7 @@ header{
 }
 
 .img_div{
-    height: 50px;
-    display: inline-block;
-
+    /*height: 50px;*/
 }
 
 .logo{
@@ -33,34 +31,21 @@ header{
 }
 
 .doble_line_div{
-    width: 110px;
-    height: 50px;
-    display: inline-block;
     padding: 0px 15px;
     font-size: 12px;
     text-align: center;
+}
+
+.doble_text_line{
+    vertical-align: middle;
 }
 
 strong{
     font-size: 14px;
 }
 
-.doble_text_line{
-    display: inline-block;
-    vertical-align: middle;
-    height: 40px;
-}
-
-form{
-    vertical-align: middle;
-    width: 496px;
-    height: 38px;
-    display: inline-block;
-    margin: 0%;
-    padding: 0%;
-    border: 0px;
-    gap: 0px;
-    background-color: white;
+.div_inline_block{
+    display: flex;
 }
 
 .div_menu_all{
@@ -89,10 +74,6 @@ form{
     width: 400px;
     display: inline-block;
     height: 38px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
     padding: 0;
     margin: 0;
     border: 0;
@@ -157,9 +138,6 @@ form{
 /*---------------Nav----------------*/
 
 nav{
-    max-width: 1100px;
-    margin-inline: auto;
-    display: flex;
     background-color: rgb(41, 39, 46);
 }
 
