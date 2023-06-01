@@ -7,6 +7,7 @@ body{
     font-size: 14px;
     max-width: 1400px;
     min-width: 800px;
+    box-sizing: border-box;
 }
 
 /*---------------Header----------------*/
@@ -79,34 +80,30 @@ strong{
 }
 
 .language_and_flag_div{
-    display: inline-block;
+    display: flex;
     margin: 0px 20px;
 }
 
 .icon_flag_div{
-    display: inline-block;
-    width: 20px;
-    height: 15px;
+    min-width: 20px;
+    min-height: 15px;
 }
 
 .icon_flag{
     padding-top: 15px;
-    display: inline-block;
     width: 20px;
     height: 15px;
 }
 
 .language_div{
-    display: inline-block;
+    padding-top: 15px;
     width: 20px;
-    height: 15px;
     background-color: black;
 }
 
 .language_select{
-    display: inline-block;
+    vertical-align: bottom;
     width: 40px;
-    height: 30px;
     background-color: black;
     color: white;
     font-size: 12px;
@@ -160,4 +157,99 @@ li{
 a{
     text-decoration: none;
     color: white;
+}
+
+
+/*-----------carrusel background------------------*/
+
+.carrusel_div{
+    position: relative;
+    clear: both;
+}
+
+.carrusel_section{
+    display: flex;
+    overflow-y: auto;
+    position: absolute;
+    z-index: 1;
+    /*transition: 2s;
+    transform: translateX(-50%);*/
+}
+
+.carrusel_img{
+    width: 100%;
+}
+
+
+.angles{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+
+.angles img{
+    padding: 60px 0px;
+    height: 40px;
+    width: 20px;
+}
+
+.angle_left_li{
+    float: left;
+    position: absolute;
+    left: 0%;
+}
+
+.angle_right_li{
+    float: right;
+    position: absolute;
+    right: 3%;
+}
+
+/*-------------products-------------*/
+
+.products_section{
+    position: relative;
+    z-index: 3;
+    border: 0%;
+    margin-top: 250px;
+    display: flex;
+    width: 100%;
+}
+
+.product_div{
+    display: block;
+    width: 100%;
+    padding: 0% 1%;
+}
+
+.card{
+    width: 23.5%;
+    height: 450px;
+    display: inline-block;
+    margin: 10px .5%;
+    background-color: white;
+    align-items: center;
+}
+
+.card h2{
+    line-height: 50px;
+    height: 15%;
+    color: black;
+    width: 90%;
+    display: inline-block;
+    padding: 0% 5% ;
+    margin: 0%;
+    text-align: left;
+}
+
+.product_img{
+    height: 70%;
+    width: 90%;
+    padding: 0% 5%;
+}
+
+.card p{
+    color: rgb(29, 151, 189);
+    width: 90%;
+    padding: 0% 5%;
 }
