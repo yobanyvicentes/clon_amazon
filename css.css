@@ -128,7 +128,7 @@ nav{
 }
 
 #nav_all_div{
-    background-image:url(./assets/prueba.jpg);
+    background-image:url(./assets/three_lines.jpg);
     background-repeat:no-repeat;
     background-position:left;
     background-size:20px 20px;
@@ -160,26 +160,54 @@ a{
 }
 
 
-/*-----------carrusel background------------------*/
+/*-----------slider background------------------*/
 
-.carrusel_div{
+.slider_div{
     position: relative;
-    clear: both;
+    width: 100%;
+    /*overflow: hidden;*/
 }
 
-.carrusel_section{
+.slider_section{
     display: flex;
     overflow-y: auto;
     position: absolute;
     z-index: 1;
-    /*transition: 2s;
-    transform: translateX(-50%);*/
+    width: 800%;
+    animation: cambio 50s infinite alternate linear;
 }
 
-.carrusel_img{
-    width: 100%;
+@keyframes cambio{
+    0% {margin-left: 0;}
+    10% {margin-left: 0;}
+
+    13% {margin-left: -100%;}
+    22% {margin-left: -100%;}
+
+    24% {margin-left: -200%;}
+    34% {margin-left: -200%;}
+
+    36% {margin-left: -300%;}
+    46% {margin-left: -300%;}
+
+    48% {margin-left: -400%;}
+    58% {margin-left: -400%;}
+
+    60% {margin-left: -500%;}
+    70% {margin-left: -500%;}
+
+    73% {margin-left: -600%;}
+    85% {margin-left: -600%;}
+
+    88% {margin-left: -700%;}
+    100% {margin-left: -700%;}
 }
 
+.slider_img{
+    width: calc(100% / 8) ;
+    height: 100%;
+    object-fit: cover;
+}
 
 .angles{
     position: absolute;
